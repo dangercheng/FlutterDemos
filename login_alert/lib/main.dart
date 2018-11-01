@@ -4,10 +4,10 @@ import 'package:flutter/rendering.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
-  runApp(new LogonAlertDemoApp());
+  runApp(new LoginAlertDemoApp());
 }
 
-class LogonAlertDemoApp extends StatelessWidget {
+class LoginAlertDemoApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -74,7 +74,6 @@ class _LoginHomePageState extends State<LoginHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // Build a Form widget using the _formKey we created above
     List<Widget> childrens = [];
     final _mainConatiner = Container(
       padding: EdgeInsets.all(10.0),
