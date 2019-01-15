@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_demos/button/button_page.dart';
+import 'layout/layout_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => ButtonPage()
+              )
+            );
+          }),
+          _listItem('layout', (){
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => LayoutPage()
               )
             );
           }),
