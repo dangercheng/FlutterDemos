@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      code_gen_demo|mark_builder:
+        enabled: true
+
+builders:
+  mark_builder:
+    import: 'package:code_gen_demo/builder.dart'
+    builder_factories: ['markBuilder']
+    build_extensions: { '.dart': ['.mark.dart'] }
+    auto_apply: root_package
+    build_to: source
